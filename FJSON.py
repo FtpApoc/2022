@@ -108,7 +108,7 @@ players["Jadon Sancho"]["Rating"] = 87
 players["Jadon Sancho"]["Position"] = "RW"
 
 #Sergio Aguero
-players["Sergio Aguero"]["Nation"] = "Argentina"
+players["Sergio Aguero"]["Nation"] = "ARG"
 players["Sergio Aguero"]["League"] = "LaLiga"
 players["Sergio Aguero"]["Club"] = "Barcelona"
 players["Sergio Aguero"]["Rating"] = 89
