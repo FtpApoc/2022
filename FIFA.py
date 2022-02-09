@@ -61,9 +61,14 @@ def NationCheck():
     AnsNation = ['FRA','ENG','ARG','POR','OTH']
     AnsNationO = AnsNation[AnsNationI]
 
-    NationCheckFilter = Filter(players, "Nation", [AnsNationO])
+    if AnsNationO == "OTH":
+        for player,playerstat in players.items():
+            if playerstat["Nation"] in AnsNation:
+                continue
+            else:
+                print(player)
     # test = Filter(players, "Nation", ["FRA", "ENG"]) <-- Example use case
-
+    NationCheckFilter = Filter(players, "Nation", AnsNationO)
 
     for NationCheckFilterPlayers in NationCheckFilter.keys():
         print(NationCheckFilterPlayers)
@@ -86,8 +91,14 @@ def PositionCheck():
 def NatPosMultiCheck():
     Positions = ["LW","ST","RW","CAM","CM"]
     AnsNation = ['FRA','ENG','ARG','POR','OTH']
+
+    for i,PlayerName in enumerate(Positions,1):
+        print(str(i)+"."+PlayerName)
     PositionO = Positions[int(input())-1]
+    for i,PlayerName in enumerate(AnsNation,1):
+        print(str(i)+"."+PlayerName)
     AnsNationO = AnsNation[int(input())-1]
+
     PositionCheckFilter = Filter(players,"Position",[PositionO])
     NationCheckFilter = Filter(players,"Nation",[AnsNationO])
     for CommonPlayer in PositionCheckFilter:
@@ -123,7 +134,10 @@ def ManeMultiPos():
         if PlayerName == fstplyr:
             print(PlayerName)
             if "CAM" in ManePosition["Position"]:
-                print("SUCCESS")
+                print("SUCCESS CAM")
+            if "LW" in ManePosition["Position"]:
+                print("SUCCESS LW")
+
 
 def Menu():
     print("""
@@ -132,7 +146,7 @@ for Nation Sorter press 2
 for Position Sorter press 3
 for weird stronk link vibes press 4
 for First Player Jazz press 5
-for dealing with Manes shit press 6
+for dealing with Mane's shit press 6
 """)
     MenuC = input("")
     if MenuC == "1":
