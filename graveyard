@@ -1,0 +1,25 @@
+###################################
+for playername,plyrstat in players.items():
+    if plyrstat['Nation'] == AnsNationO:
+        print(playername)
+    else:
+        Onation = True
+        for i in playerlist:
+            if plyrstat('nation') == AnsNation[i]:
+                Onation = False
+        if Onation == True:
+            print(playername)
+###################################
+# test = {key: value for key, value in players.items() if value["Nation"] == AnsNationO}
+# print(test)
+# for playername,plyrstat in players.items():
+#     if plyrstat['Nation'] == AnsNationO:
+#         print(playername)
+#     if AnsNationO == "OTH":
+#         if plyrstat['Nation'] in AnsNation:
+#             continue
+#         else:
+#             print(playername)
+###########################################################
+# THIS IS A SHIT WAY HENRY MADE ME DO FUCK fstplyr = list(players.keys())[random.randint(0,len(playerlist))]
+#########################################
