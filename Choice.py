@@ -20,10 +20,10 @@ def CalculateChoice():
         total += ChoiceList[i]
         List.append(ChoiceList[i])
 
-    final = round(random.uniform(0,total),1)    
+    final = round(random.uniform(0,total),1)
     print(total)
     print(final)
-    ChoiceList.pop()
+    
 def Maine():
     CalculateChoice()
 
