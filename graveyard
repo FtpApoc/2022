@@ -24,3 +24,4 @@ for playername,plyrstat in players.items():
 # THIS IS A SHIT WAY HENRY MADE ME DO FUCK fstplyr = list(players.keys())[random.randint(0,len(playerlist))]
 #########################################
 key and value pairs for dictionaries: iterable
+my slime it is a good day
