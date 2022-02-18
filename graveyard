@@ -26,3 +26,11 @@ for playername,plyrstat in players.items():
 key and value pairs for dictionaries: iterable
 my slime it is a good day
 words and more words
+#######################################################
+
+generate number between 0 and sum(array)
+for i in array[i]
+while total < random number:
+  total += array[i+1]
+else:
+  Selected = Array[i]
