@@ -3,7 +3,7 @@ import json
 #this imports random numbers
 import random
 
-#test to see if git works
+#test to see if blame works
 
 #with open means that while the file is open, import players.json as a json file
 with open('players.json') as json_file:
